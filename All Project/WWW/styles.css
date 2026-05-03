@@ -1,0 +1,217 @@
+/* ================================================
+   SMART STATISTICAL ANALYSIS SYSTEM — styles.css
+   ================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@300;400;600&display=swap');
+
+/* ---- Base ---- */
+* { font-family: 'Inter', sans-serif; }
+body { background-color: #080C10; color: #E0E0E0; }
+
+/* ---- Title Bar ---- */
+.title-bar {
+  background: linear-gradient(135deg, #0D1117 0%, #161B22 50%, #0D1117 100%);
+  border-bottom: 2px solid #00C853;
+  padding: 20px 30px;
+  margin-bottom: 20px;
+}
+.title-bar h2 {
+  font-family: 'Space Mono', monospace;
+  color: #00C853;
+  font-size: 22px;
+  margin: 0;
+}
+.title-bar p { color: #546E7A; font-size: 12px; margin: 4px 0 0; }
+
+/* ---- Sidebar ---- */
+.sidebar-panel {
+  background-color: #0D1117;
+  border: 1px solid #1C2A35;
+  border-radius: 12px;
+  padding: 20px;
+}
+.section-title {
+  font-family: 'Space Mono', monospace;
+  color: #00C853;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #1C2A35;
+}
+.input-card {
+  background: #0D1117;
+  border: 1px solid #1C2A35;
+  border-radius: 10px;
+  padding: 14px;
+  margin-bottom: 12px;
+}
+
+/* ---- Type Badge ---- */
+.type-badge {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: 'Space Mono', monospace;
+}
+.type-quant { background: #0D2D1A; color: #00C853; border: 1px solid #00C853; }
+.type-qual  { background: #1A1A2E; color: #7C4DFF; border: 1px solid #7C4DFF; }
+
+/* ---- KPI Grid ---- */
+.kpi-grid { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
+.kpi-box {
+  flex: 1 1 140px;
+  background: linear-gradient(135deg, #0D1117, #161B22);
+  border-radius: 10px;
+  padding: 14px;
+  min-width: 120px;
+}
+.kpi-box.green  { border-left: 3px solid #00C853; }
+.kpi-box.orange { border-left: 3px solid #FFA726; }
+.kpi-box.cyan   { border-left: 3px solid #00E5FF; }
+.kpi-box.purple { border-left: 3px solid #7C4DFF; }
+.kpi-box.red    { border-left: 3px solid #FF5252; }
+.kpi-label {
+  font-size: 10px; color: #546E7A;
+  text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px;
+}
+.kpi-value {
+  font-family: 'Space Mono', monospace;
+  font-size: 20px; color: #E0E0E0; font-weight: bold;
+}
+.kpi-sub { font-size: 10px; color: #78909C; margin-top: 2px; }
+
+/* ---- Analysis Sections ---- */
+.analysis-section {
+  background: #0D1117;
+  border: 1px solid #1C2A35;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+.analysis-section h5 {
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 14px;
+}
+
+/* ---- Summary Blocks ---- */
+.summary-block {
+  background: #0D1117;
+  border: 1px solid #1C2A35;
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin-bottom: 12px;
+}
+
+/* ---- Stat Table ---- */
+.stat-table { width: 100%; border-collapse: collapse; }
+.stat-table tr { border-bottom: 1px solid #1C2A35; }
+.stat-table td { padding: 7px 10px; font-size: 13px; }
+.stat-table td:first-child { color: #78909C; width: 55%; }
+.stat-table td:last-child  {
+  color: #E0E0E0;
+  font-family: 'Space Mono', monospace;
+  text-align: right;
+}
+.stat-table .best-row td  { background: rgba(0,200,83,0.07); }
+
+/* Generic summary table used in Full Summary */
+.summ-table { width: 100%; border-collapse: collapse; }
+.summ-table tr { border-bottom: 1px solid #1C2A35; }
+.summ-table td { padding: 6px 10px; font-size: 13px; }
+.summ-table td:first-child { color: #78909C; }
+.summ-table td:last-child  {
+  color: #E0E0E0;
+  font-family: 'Space Mono', monospace;
+  text-align: right;
+}
+.summ-table .hi td { background: rgba(0,200,83,0.07); color: #00C853; font-weight: bold; }
+
+/* ---- Recommend Box ---- */
+.recommend-box {
+  background: linear-gradient(135deg, #0A1F12, #0D1117);
+  border: 2px solid #00C853;
+  border-radius: 14px;
+  padding: 22px;
+  margin-bottom: 16px;
+}
+.recommend-box h4 {
+  font-family: 'Space Mono', monospace;
+  color: #00C853;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+.rec-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 10px;
+  padding: 12px;
+  background: rgba(0,200,83,0.05);
+  border-radius: 8px;
+}
+.rec-icon  { font-size: 22px; margin-top: 2px; }
+.rec-label { font-size: 11px; color: #546E7A; text-transform: uppercase; }
+.rec-val   {
+  font-family: 'Space Mono', monospace;
+  color: #00C853; font-size: 16px; font-weight: bold;
+}
+.rec-reason { font-size: 12px; color: #78909C; margin-top: 2px; line-height: 1.5; }
+
+/* ---- Tabs ---- */
+.nav-tabs .nav-link.active {
+  background-color: #161B22 !important;
+  color: #00C853 !important;
+  border-color: #00C853 !important;
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+}
+.nav-tabs .nav-link { color: #546E7A !important; font-size: 12px; }
+
+/* ---- Pre / verbatim ---- */
+pre {
+  background-color: #080C10 !important;
+  color: #B0BEC5 !important;
+  border: 1px solid #1C2A35 !important;
+  border-radius: 8px;
+  font-family: 'Space Mono', monospace !important;
+  font-size: 12px !important;
+  line-height: 1.7 !important;
+}
+
+/* ---- Frequency Table ---- */
+.freq-table-wrap { overflow-x: auto; }
+.freq-tbl { width: 100%; border-collapse: collapse; font-size: 13px; }
+.freq-tbl th {
+  background: #161B22;
+  color: #00C853;
+  padding: 8px 12px;
+  text-align: left;
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+.freq-tbl td { padding: 7px 12px; border-bottom: 1px solid #1C2A35; color: #B0BEC5; }
+.freq-tbl tr:hover td { background: #0D1F26; }
+.bar-fill {
+  height: 8px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #00C853, #00E5FF);
+}
+
+/* ---- Misc ---- */
+hr { border-color: #1C2A35; }
+.form-control, .form-select {
+  background-color: #161B22 !important;
+  color: #E0E0E0 !important;
+  border: 1px solid #1C2A35 !important;
+}
+.shiny-input-radiogroup label { color: #90A4AE; }
